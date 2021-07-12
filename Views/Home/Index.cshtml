@@ -1,0 +1,16 @@
+﻿@model AspNetCoreViewModelSample.Models.ViewModels.HomeViewModel
+
+<div class="text-center">
+    <h1 class="display-4">@Model.Title</h1>
+    <p>@Model.Text</p>
+
+    <form method="post">
+        <input type="text" asp-for="InputModel.Search" placeholder="Cerca...">
+        <select asp-for="InputModel.Category">
+            <option value="1">Categoria 1</option>
+            <option value="2">Categoria 2</option>
+            <option value="3">Categoria 3</option>
+        </select>
+        <button>Cerca</button>
+    </form>
+</div>
